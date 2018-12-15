@@ -1,9 +1,11 @@
 export const colors = {
-  blackPrimary: '#1d1d1d',
+  blackPrimary: '#e1e1e1',
   whitePrimary: '#f9f9f9',
   grayPrimary: '#6a6a6a',
-  backgroundPrimary: '#f6f9ff',
-  backgroundSecondary: '#fff',
-  likedPrimary: '#ff4545',
-  likedSecondary: 'rgba(255, 215, 222, 0.8)'
+  textPrimary: '#444444',
+  textSecondary: '#6e6e6e',
+  primaryColor: '#ec6363',
+  secondaryColor: '#eca163',
+  thirdColor: '#3b8e8e',
+  fourthColor: '#4fbd4f'
 };
