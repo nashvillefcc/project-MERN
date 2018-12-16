@@ -1,12 +1,15 @@
 import React from 'react';
 import Logo from '../Helpers/Logo';
 
+import Wrapper from './NavBarStyle';
 function NavBar() {
   return (
-    <>
-      <Logo />
-      <div>Login</div>
-    </>
+    <Wrapper>
+      <div>
+        <Logo />
+        <span>Login</span>
+      </div>
+    </Wrapper>
   );
 }
 
