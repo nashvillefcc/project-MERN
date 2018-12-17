@@ -12,7 +12,7 @@ function Heading({ children, color }) {
 }
 
 Heading.propTypes = {
-  headingText: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired
 };
 
 export default Heading;
