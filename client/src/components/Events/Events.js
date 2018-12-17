@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Wrapper from './EventsStyle';
 import { colors } from '../../styles/variables';
 import Heading from '../Helpers/Heading';
-
+import EventsSearchBarContainer from '../EventsSearchBar';
 const Events = props => {
   return (
     <Wrapper>
@@ -12,7 +12,7 @@ const Events = props => {
         <Heading color={colors.thirdColor}>
           Find your kindred spirts from Meetup.com
         </Heading>
-        <div>search</div>
+        <EventsSearchBarContainer />
         <div>sort</div>
         <div>events list</div>
       </div>
