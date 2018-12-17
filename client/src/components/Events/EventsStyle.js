@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 export default styled.div`
-  background-color: gray;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
   > div {
     display: flex;
     flex-direction: column;

@@ -7,6 +7,7 @@ const Events = props => {
   return (
     <Wrapper>
       <div>
+        <p>Find your kindred spirtis who are at Meetup.com</p>
         <div>search</div>
         <div>sort</div>
         <div>events list</div>
