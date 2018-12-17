@@ -5,7 +5,7 @@ import Wrapper from './EventSearchBarContainerStyle';
 
 function EventsSearchBar({ onChangeHandler, searchValue, onSearchSubmit }) {
   return (
-    <form onSubmit={onSearchSubmit}>
+    <form onSubmit={e => onSearchSubmit(e)}>
       <input
         value={searchValue}
         onChange={e => onChangeHandler(e)}
@@ -16,6 +16,10 @@ function EventsSearchBar({ onChangeHandler, searchValue, onSearchSubmit }) {
   );
 }
 
-EventsSearchBar.propTypes = {};
+EventsSearchBar.propTypes = {
+  onChangeHandler: PropTypes.func.isRequired,
+  searchValue: PropTypes.string.isRequired,
+  onSearchSubmit: PropTypes.func.isRequired
+};
 
 export default EventsSearchBar;

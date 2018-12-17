@@ -16,7 +16,8 @@ class EventsSearchBarContainer extends Component {
   };
 
   onSearchSubmit = e => {
-    console.log('Searching for ', e.target.value);
+    e.preventDefault();
+    console.log('Searching for ', this.state.searchValue);
   };
 
   render() {
