@@ -5,6 +5,7 @@ import Wrapper from './EventsStyle';
 import { colors } from '../../styles/variables';
 import Heading from '../Helpers/Heading';
 import EventsSearchBarContainer from '../EventsSearchBar';
+import EventsList from '../EventsList';
 const Events = props => {
   return (
     <Wrapper>
@@ -14,7 +15,7 @@ const Events = props => {
         </Heading>
         <EventsSearchBarContainer />
         <div>sort</div>
-        <div>events list</div>
+        <EventsList />
       </div>
     </Wrapper>
   );
