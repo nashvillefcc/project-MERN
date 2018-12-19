@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Wrapper from './EventsStyle';
-import { colors } from '../../styles/variables';
-import Heading from '../Helpers/Heading';
-import EventsSearchBarContainer from '../EventsSearchBar';
-import EventsList from '../EventsList';
 
+import EventsResult from '../EventsResult';
+import EventView from '../EventView/EventView';
 class Events extends Component {
   state = { events: [] };
 
@@ -15,16 +13,11 @@ class Events extends Component {
   }
 
   render() {
+    const { events } = this.state;
     return (
       <Wrapper>
-        <div>
-          <Heading color={colors.thirdColor}>
-            Find your kindred spirts from Meetup.com
-          </Heading>
-          <EventsSearchBarContainer />
-          <div>sort</div>
-          <EventsList />
-        </div>
+        <EventsResult events={events} />
+        <EventView />
       </Wrapper>
     );
   }
