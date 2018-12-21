@@ -6,7 +6,9 @@ import Wrapper from './EventsListStyle';
 import EventCard from '../EventCard';
 
 function EventsList({ events }) {
-  events = sampleEvents.map(event => <EventCard event={event.name} />);
+  events = sampleEvents.map(event => (
+    <EventCard key={event._id} event={event} />
+  ));
 
   return <Wrapper>{events}</Wrapper>;
 }
