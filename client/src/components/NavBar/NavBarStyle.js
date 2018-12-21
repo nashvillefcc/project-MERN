@@ -6,6 +6,5 @@ export default styled.div`
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-    outline: 1px solid pink;
   }
 `;
