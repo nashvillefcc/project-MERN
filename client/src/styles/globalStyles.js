@@ -4,14 +4,17 @@ const GlobalStyles = createGlobalStyle`
 #root {
   height: 100%;
 }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 html {
   height: 100%;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 };
 body {
-  margin: 0;
-  padding: 0;
   height: 100%;
 };
 main {
