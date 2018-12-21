@@ -9,3 +9,7 @@ export const colors = {
   thirdColor: '#3b8e8e',
   fourthColor: '#4fbd4f'
 };
+
+export const breakPoints = {
+  mid: 760
+};
