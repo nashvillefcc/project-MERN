@@ -2,9 +2,8 @@ export default [
   {
     _id: '5c17790faa8bab792db09d9c',
     name: 'My Nash group',
-    eventName:
-      'exercitation ipsum ea incididunt nisi excepteur nisi eu nostrud culpa',
-    date: 'Wednesday, August 9, 2017',
+    eventName: 'exercitation ipsum ea incididunt',
+    date: 'Wed, Aug 9',
     time: '3:17 AM',
     attending: [
       {
@@ -62,9 +61,8 @@ export default [
   {
     _id: '5c17790fd42ce15f8ee0ec08',
     name: 'Groupy McGroupface',
-    eventName:
-      'qui exercitation ex aliquip enim Lorem fugiat velit consectetur proident',
-    date: 'Tuesday, September 8, 2015 ',
+    eventName: 'qui exercitation ex aliquip',
+    date: 'Tues, Sept 8',
     time: '2:32 AM',
     attending: [
       {
@@ -122,9 +120,8 @@ export default [
   {
     _id: '5c17790f04efd1d3021663de',
     name: 'Lets fix Toasters together',
-    eventName:
-      'voluptate exercitation enim minim eiusmod esse nulla enim exercitation dolore',
-    date: 'Thursday, February 18, 2016',
+    eventName: 'voluptate exercitation enim minim',
+    date: 'Thurs, Feb 18',
     time: '5:29 PM',
     attending: [
       {
@@ -183,7 +180,7 @@ export default [
     _id: '5c17790fd6af203832be89c5',
     name: 'Learn R Now',
     eventName: 'ullamco cillum ea ipsum irure amet veniam laborum ullamco quis',
-    date: 'Sunday, August 23, 2015',
+    date: 'Sun, Feb 18',
     time: '5:39 AM',
     attending: [
       {
@@ -241,9 +238,8 @@ export default [
   {
     _id: '5c17790feba08d3adbec91c8',
     name: 'Groupy Group',
-    eventName:
-      'commodo do Lorem nulla aliquip laboris officia dolore aute ullamco',
-    date: 'Tuesday, August 11, 2015',
+    eventName: 'commodo do Lorem nulla',
+    date: 'Tues, Aug 11',
     time: '5:33 PM',
     attending: [
       {
