@@ -5,5 +5,6 @@ export default styled.div`
   background-color: #fff;
   display: flex;
   min-height: 4rem;
-  outline: 1px solid gray;
+  border-bottom: 1px solid #bebdbd;
+  margin-top: 5px;
 `;

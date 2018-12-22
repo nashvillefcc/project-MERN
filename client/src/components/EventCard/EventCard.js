@@ -8,12 +8,12 @@ import CenterSection from './CenterSection';
 import RightSection from './RightSection';
 
 function EventCard({ event }) {
-  const { name, eventName, date, time, attending } = event;
+  const { attending } = event;
   return (
     <Wrapper>
       <LeftSection>{attending.length}</LeftSection>
-      <CenterSection>{eventName}</CenterSection>
-      <RightSection>{date}</RightSection>
+      <CenterSection eventData={event} />
+      <RightSection eventData={event} />
     </Wrapper>
   );
 }

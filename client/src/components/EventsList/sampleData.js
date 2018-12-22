@@ -179,7 +179,7 @@ export default [
   {
     _id: '5c17790fd6af203832be89c5',
     name: 'Learn R Now',
-    eventName: 'ullamco cillum ea ipsum irure amet veniam laborum ullamco quis',
+    eventName: 'ullamco cillum ea ipsum irure ullamco cillum ea ipsum irure',
     date: 'Sun, Feb 18',
     time: '5:39 AM',
     attending: [

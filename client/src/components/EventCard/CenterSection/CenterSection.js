@@ -2,8 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Wrapper from './CenterSectionStyle';
-function CenterSection(props) {
-  return <Wrapper>{props.children}</Wrapper>;
+function CenterSection({ eventData }) {
+  const { eventName, name, attending } = eventData;
+  return (
+    <Wrapper>
+      <h4>{eventName}</h4>
+      <p>{name}</p>
+      <p>{attending.length} going</p>
+    </Wrapper>
+  );
 }
 
 CenterSection.propTypes = {};
