@@ -11,7 +11,7 @@ function EventCard({ event }) {
   const { name, eventName, date, time, attending } = event;
   return (
     <Wrapper>
-      <LeftSection>{attending.length} ◊</LeftSection>
+      <LeftSection>{attending.length}</LeftSection>
       <CenterSection>{eventName}</CenterSection>
       <RightSection>{date}</RightSection>
     </Wrapper>
