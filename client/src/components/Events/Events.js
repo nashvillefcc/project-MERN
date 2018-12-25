@@ -9,7 +9,7 @@ import ModalContainer from '../Helpers/Modal';
 class Events extends Component {
   state = {
     events: [],
-    showModal: true,
+    showModal: false,
     selectedEvent: {},
     windowWidth: 'mid-size'
   };

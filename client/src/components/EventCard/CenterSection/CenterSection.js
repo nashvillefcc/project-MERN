@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Wrapper from './CenterSectionStyle';
+import { Wrapper, GroupName, Attending } from './CenterSectionStyle';
 function CenterSection({ eventData }) {
   const { eventName, name, attending } = eventData;
   return (
     <Wrapper>
       <h4>{eventName}</h4>
-      <p>{name}</p>
-      <p>{attending.length} going</p>
+      <GroupName>{name}</GroupName>
+      <Attending>{attending.length} going</Attending>
     </Wrapper>
   );
 }
