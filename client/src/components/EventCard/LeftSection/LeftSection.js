@@ -2,11 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Wrapper from './LeftSectionStyle';
+import Connections from '../../Helpers/Connections/Connections';
+
 function LeftSection({ selected, children }) {
   return (
     <Wrapper>
       {!selected ? null : <span />}
-      <p>{children}</p>
+      <Connections>{children}</Connections>
     </Wrapper>
   );
 }
