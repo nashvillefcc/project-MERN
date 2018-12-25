@@ -3,16 +3,25 @@ import { colors } from '../../../styles/variables';
 
 export default styled.div`
   display: flex;
-  align-self: center;
-  justify-content: center;
   flex: 1;
-  color: ${colors.secondaryColor};
-  font-weight: bold;
-  font-weight: bold;
-  font-size: 1.5rem;
-  &:after {
-    content: '🦄';
-    position: relative;
-    left: 5px;
+  span {
+    content: '';
+    width: 0.5rem;
+    background-color: ${colors.thirdColor};
+    height: 100%;
+  }
+  p {
+    align-self: center;
+    margin: 0 auto;
+    color: ${colors.secondaryColor};
+    font-weight: bold;
+    font-weight: bold;
+    font-size: 1.5rem;
+    &:after {
+      content: '🦄';
+      position: relative;
+      left: 5px;
+      align-self: center;
+    }
   }
 `;

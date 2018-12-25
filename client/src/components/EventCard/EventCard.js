@@ -14,9 +14,9 @@ function EventCard({ event, isSelected, selectEventHandler, eventIndex }) {
       selected={isSelected}
       onClick={e => selectEventHandler(e, eventIndex)}
     >
-      <LeftSection>{attending.length}</LeftSection>
-      <CenterSection eventData={event} />
-      <RightSection eventData={event} />
+      <LeftSection selected={isSelected}>{attending.length}</LeftSection>
+      <CenterSection eventData={event} selected={isSelected} />
+      <RightSection eventData={event} selected={isSelected} />
     </Wrapper>
   );
 }
