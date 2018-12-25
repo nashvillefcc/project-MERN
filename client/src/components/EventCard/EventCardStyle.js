@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+import { colors } from '../../styles/variables';
 
 export default styled.div`
   width: 100%;
-  background-color: #fff;
+  background-color: ${props =>
+    !props.selected ? '#fff' : colors.graySecondary};
   display: flex;
   min-height: 6rem;
   border-bottom: 1px solid #bebdbd;

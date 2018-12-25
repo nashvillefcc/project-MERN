@@ -10,7 +10,7 @@ class Events extends Component {
   state = {
     events: [],
     showModal: false,
-    selectedEvent: {},
+    selectedEvent: 0,
     windowWidth: 'mid-size'
   };
 
@@ -21,6 +21,13 @@ class Events extends Component {
     }));
   };
 
+  selectEventHandler = (e, eventIndex) => {
+    e.stopPropagation();
+    this.setState(prevState => ({
+      ...prevState,
+      selectedEvent: eventIndex
+    }));
+  };
   widthBreakpointHandler() {
     //sets state.windowWidth if width of window moves over breakpoint
     if (this.state.windowWidth === 'mid-size') {
@@ -55,7 +62,11 @@ class Events extends Component {
     const { events, showModal, selectedEvent, windowWidth } = this.state;
     return (
       <Wrapper>
-        <EventsResult events={events} />
+        <EventsResult
+          events={events}
+          selected={selectedEvent}
+          selectEventHandler={this.selectEventHandler}
+        />
         {windowWidth === 'full-size' ? (
           <EventView eventData={selectedEvent || null} />
         ) : (

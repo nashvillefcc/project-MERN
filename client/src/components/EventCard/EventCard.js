@@ -7,10 +7,13 @@ import LeftSection from './LeftSection';
 import CenterSection from './CenterSection';
 import RightSection from './RightSection';
 
-function EventCard({ event }) {
+function EventCard({ event, isSelected, selectEventHandler, eventIndex }) {
   const { attending } = event;
   return (
-    <Wrapper>
+    <Wrapper
+      selected={isSelected}
+      onClick={e => selectEventHandler(e, eventIndex)}
+    >
       <LeftSection>{attending.length}</LeftSection>
       <CenterSection eventData={event} />
       <RightSection eventData={event} />

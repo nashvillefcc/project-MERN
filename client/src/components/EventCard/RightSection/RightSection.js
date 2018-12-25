@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import Wrapper from './RightSectionStyle';
 function RightSection({ eventData }) {
-  console.log('event', eventData);
   const { date, time } = eventData;
   return (
     <Wrapper>
