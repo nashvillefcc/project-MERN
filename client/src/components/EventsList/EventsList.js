@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import sampleEvents from './sampleData';
 
 import Wrapper from './EventsListStyle';
 import EventCard from '../EventCard';
 
-function EventsList({ selected, selectEventHandler }) {
-  const events = sampleEvents.map((event, i) => {
+function EventsList({ selected, selectEventHandler, events }) {
+  const eventsCards = events.map((event, i) => {
     const isSelected = i === selected;
     return (
       <EventCard
@@ -19,7 +18,7 @@ function EventsList({ selected, selectEventHandler }) {
     );
   });
 
-  return <Wrapper>{events}</Wrapper>;
+  return <Wrapper>{eventsCards}</Wrapper>;
 }
 
 EventsList.propTypes = {};
