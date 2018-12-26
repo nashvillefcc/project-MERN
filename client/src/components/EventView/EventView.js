@@ -1,17 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Wrapper from './EventViewStyle';
+import { Wrapper, EventPanelSummary } from './EventViewStyle';
+import Connections from '../Helpers/Connections';
+import EventPanelAttending from './EventPanelAttending';
 
-function Event({ event }) {
+function EventPanel({ event }) {
   return (
     <Wrapper>
-      <div>Event Detail</div>
-      <div>Attendees</div>
+      <EventPanelSummary>
+        <Connections fontSize="2.2rem" align="left">
+          10
+        </Connections>
+        <header>
+          <h1>Title of Event</h1>
+          <p>by Group Name Here</p>
+        </header>
+        <div>
+          <p>
+            Event Summary. this is the stroy fo us and whe we da'ys type. lorem
+            ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is
+            the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd
+            hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and
+            whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df
+            d{' '}
+          </p>
+        </div>
+      </EventPanelSummary>
+      <EventPanelAttending />
     </Wrapper>
   );
 }
 
 Event.propTypes = {};
 
-export default Event;
+export default EventPanel;
