@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import EventView from '../../EventView';
+import EventPanel from '../../EventPanel';
 
 function ModalController({ modalType, modalData }) {
   switch (modalType) {
     case 'event':
-      return <EventView event={modalData}>Event</EventView>;
+      return <EventPanel event={modalData}>Event</EventPanel>;
     default:
       return null;
   }

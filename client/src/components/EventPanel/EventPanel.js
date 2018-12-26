@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Wrapper, EventPanelSummary } from './EventViewStyle';
-import Connections from '../Helpers/Connections';
+import { Wrapper, EventPanelSummary } from './EventPanelStyle';
+import Connections from '../Helpers/Connections/Connections';
 import EventPanelAttending from './EventPanelAttending';
 
 function EventPanel({ event }) {

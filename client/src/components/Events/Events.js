@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Wrapper from './EventsStyle';
 import { breakPoints } from '../../styles/variables';
 import EventsResult from '../EventsResult';
-import EventView from '../EventView/EventView';
+import EventPanel from '../EventPanel';
 import ModalContainer from '../Helpers/Modal';
 class Events extends Component {
   state = {
@@ -68,10 +68,10 @@ class Events extends Component {
           selectEventHandler={this.selectEventHandler}
         />
         {windowWidth === 'full-size' ? (
-          <EventView eventData={selectedEvent || null} />
+          <EventPanel eventData={selectedEvent || null} />
         ) : (
           <ModalContainer showModal={showModal} toggleModal={this.toggleModal}>
-            <EventView eventData={selectedEvent || null} />
+            <EventPanel eventData={selectedEvent || null} />
           </ModalContainer>
         )}
       </Wrapper>
