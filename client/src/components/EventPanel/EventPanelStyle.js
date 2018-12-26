@@ -26,22 +26,16 @@ export const EventPanelSummary = styled.div`
     margin: 1rem;
   }
   header {
-    display: flex;
     margin: 0 1rem;
     h1 {
-      flex: 3;
-      align-self: flex-end;
       color: ${colors.blackPrimary};
       margin: 0;
     }
     p {
-      flex: 2;
-      align-self: flex-end;
       color: ${colors.grayPrimary};
     }
   }
   div {
-    width: 100%;
     margin: 0 auto;
 
     p {

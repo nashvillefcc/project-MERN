@@ -6,15 +6,18 @@ import Connections from '../Helpers/Connections/Connections';
 import EventPanelAttending from './EventPanelAttending';
 
 function EventPanel({ event }) {
+  console.log('event', event);
+  const { attending, date, time, name, eventName } = event;
+  const linkedMembers = attending.filter(member => member.connections > 0);
   return (
     <Wrapper>
       <EventPanelSummary>
         <Connections fontSize="2.2rem" align="left">
-          10
+          {linkedMembers.length}
         </Connections>
         <header>
-          <h1>Title of Event</h1>
-          <p>by Group Name Here</p>
+          <h1>{eventName}</h1>
+          <p>{name}</p>
         </header>
         <div>
           <p>
@@ -27,7 +30,7 @@ function EventPanel({ event }) {
           </p>
         </div>
       </EventPanelSummary>
-      <EventPanelAttending />
+      <EventPanelAttending attending={attending} />
     </Wrapper>
   );
 }

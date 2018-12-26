@@ -1,6 +1,6 @@
 export default [
   {
-    _id: '5c17790faa8bab792db09d9c',
+    _id: 'aa8bab792db09d9c',
     name: 'My Nash group',
     eventName: 'exercitation ipsum ea incididunt',
     date: 'Wed, Aug 9',
@@ -59,7 +59,7 @@ export default [
     ]
   },
   {
-    _id: '5c17790fd42ce15f8ee0ec08',
+    _id: 'd42ce15f8ee0ec08',
     name: 'Groupy McGroupface',
     eventName: 'qui exercitation ex aliquip',
     date: 'Tues, Sept 8',
@@ -118,7 +118,7 @@ export default [
     ]
   },
   {
-    _id: '5c17790f04efd1d3021663de',
+    _id: '04efd1d3021663de',
     name: 'Lets fix Toasters together',
     eventName: 'voluptate exercitation enim minim',
     date: 'Thurs, Feb 18',
@@ -177,7 +177,7 @@ export default [
     ]
   },
   {
-    _id: '5c17790fd6af203832be89c5',
+    _id: 'd6af203832be89c5',
     name: 'Learn R Now',
     eventName: 'ullamco cillum ea ipsum irure ullamco cillum ea ipsum irure',
     date: 'Sun, Feb 18',
@@ -236,7 +236,7 @@ export default [
     ]
   },
   {
-    _id: '5c17790feba08d3adbec91c8',
+    _id: 'eba08d3adbec91c8',
     name: 'Groupy Group',
     eventName: 'commodo do Lorem nulla',
     date: 'Tues, Aug 11',

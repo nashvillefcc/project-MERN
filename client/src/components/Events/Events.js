@@ -65,7 +65,6 @@ class Events extends Component {
     );
   }
   render() {
-    console.log('this.state', this.state);
     const { events, showModal, selectedEventIndex, windowWidth } = this.state;
     return (
       <Wrapper>
@@ -75,10 +74,10 @@ class Events extends Component {
           selectEventHandler={this.selectEventHandler}
         />
         {windowWidth === 'full-size' ? (
-          <EventPanel eventData={selectedEventIndex || null} />
+          <EventPanel event={events[selectedEventIndex] || null} />
         ) : (
           <ModalContainer showModal={showModal} toggleModal={this.toggleModal}>
-            <EventPanel eventData={selectedEventIndex || null} />
+            <EventPanel event={events[selectedEventIndex] || null} />
           </ModalContainer>
         )}
       </Wrapper>
