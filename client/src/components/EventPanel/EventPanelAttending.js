@@ -1,10 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import Wrapper from './EventPanelAttendingStyle';
 
-const EventPanelAttending = props => {
-  return <Wrapper>icons</Wrapper>;
+import EventAttendeeCard from '../EventAttendee';
+
+const EventPanelAttending = ({ attending }) => {
+  console.log('attending', attending);
+  const attendees = attending.map(attendee => (
+    <EventAttendeeCard member={attendee} key={attendee.id} />
+  ));
+  return (
+    <Wrapper>
+      <div>{attendees}</div>
+    </Wrapper>
+  );
 };
 
 EventPanelAttending.propTypes = {};

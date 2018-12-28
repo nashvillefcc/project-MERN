@@ -6,6 +6,12 @@ export default styled.div`
   flex-direction: column;
   background-color: ${colors.whiteSecondary};
   min-height: 40%;
+  > div {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   &:before {
     content: '';
     width: 100%;
