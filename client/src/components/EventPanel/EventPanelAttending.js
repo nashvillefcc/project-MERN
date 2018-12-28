@@ -6,9 +6,9 @@ import EventAttendeeCard from '../EventAttendee';
 
 const EventPanelAttending = ({ attending }) => {
   console.log('attending', attending);
-  const attendees = attending.map(attendee => (
-    <EventAttendeeCard member={attendee} key={attendee.id} />
-  ));
+  const attendees = attending
+    .sort((a, b) => b.connections - a.connections)
+    .map(attendee => <EventAttendeeCard member={attendee} key={attendee.id} />);
   return (
     <Wrapper>
       <div>{attendees}</div>
