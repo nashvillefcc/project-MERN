@@ -6,6 +6,10 @@ export default styled.div`
   flex-direction: column;
   background-color: ${colors.whiteSecondary};
   min-height: 40%;
+  header {
+    margin: 1rem 1rem 0 1rem;
+    color: ${colors.blackPrimary};
+  }
   > div {
     padding: 1rem;
     display: flex;
