@@ -4,13 +4,15 @@ import PropTypes from 'prop-types';
 import Wrapper from './EventsStyle';
 import { breakPoints } from '../../styles/variables';
 import EventsResult from '../EventsResult';
-import EventView from '../EventView/EventView';
+import EventPanel from '../EventPanel';
 import ModalContainer from '../Helpers/Modal';
+
+import sampleData from './sampleData';
 class Events extends Component {
   state = {
     events: [],
     showModal: false,
-    selectedEvent: 0,
+    selectedEventIndex: 0,
     windowWidth: 'mid-size'
   };
 
@@ -25,7 +27,7 @@ class Events extends Component {
     e.stopPropagation();
     this.setState(prevState => ({
       ...prevState,
-      selectedEvent: eventIndex
+      selectedEventIndex: eventIndex
     }));
   };
   widthBreakpointHandler() {
@@ -51,6 +53,10 @@ class Events extends Component {
     //set width of window to state
     this.widthBreakpointHandler();
     window.addEventListener('resize', this.widthBreakpointHandler.bind(this));
+    this.setState(prevState => ({
+      ...prevState,
+      events: sampleData
+    }));
   }
   componentWillUnmount() {
     window.removeEventListener(
@@ -59,19 +65,19 @@ class Events extends Component {
     );
   }
   render() {
-    const { events, showModal, selectedEvent, windowWidth } = this.state;
+    const { events, showModal, selectedEventIndex, windowWidth } = this.state;
     return (
       <Wrapper>
         <EventsResult
           events={events}
-          selected={selectedEvent}
+          selected={selectedEventIndex}
           selectEventHandler={this.selectEventHandler}
         />
         {windowWidth === 'full-size' ? (
-          <EventView eventData={selectedEvent || null} />
+          <EventPanel event={events[selectedEventIndex] || null} />
         ) : (
           <ModalContainer showModal={showModal} toggleModal={this.toggleModal}>
-            <EventView eventData={selectedEvent || null} />
+            <EventPanel event={events[selectedEventIndex] || null} />
           </ModalContainer>
         )}
       </Wrapper>
