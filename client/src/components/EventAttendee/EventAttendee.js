@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 
 import Wrapper from './EventAttendeeStyle';
 const EventAttendee = ({ member }) => {
-  console.log('member', member.name);
   const connections = member.connections ? member.connections : 0;
   const name = member.name.split(' ');
   return (
-    <Wrapper>
+    <Wrapper connections={connections}>
       <div>
         <img
           src={`https://source.unsplash.com/60x60/?face,${member.name}`}

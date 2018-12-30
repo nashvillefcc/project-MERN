@@ -6,7 +6,6 @@ import Connections from '../Helpers/Connections/Connections';
 import EventPanelAttending from './EventPanelAttending';
 
 function EventPanel({ event }) {
-  console.log('event', event);
   const { attending, date, time, name, eventName } = event;
   const linkedMembers = attending.filter(member => member.connections > 0);
   return (
