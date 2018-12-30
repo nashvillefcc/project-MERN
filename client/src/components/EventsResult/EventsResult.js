@@ -15,7 +15,7 @@ function EventsResult(props) {
       </Heading>
       <EventsSearchBarContainer />
       <div>sort</div>
-      <EventsList />
+      <EventsList {...props} />
     </Wrapper>
   );
 }

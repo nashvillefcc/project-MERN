@@ -2,11 +2,10 @@ export default [
   {
     _id: '5c17790faa8bab792db09d9c',
     name: 'My Nash group',
-    eventName:
-      'exercitation ipsum ea incididunt nisi excepteur nisi eu nostrud culpa',
-    date: 'Wednesday, August 9, 2017',
+    eventName: 'exercitation ipsum ea incididunt',
+    date: 'Wed, Aug 9',
     time: '3:17 AM',
-    friends: [
+    attending: [
       {
         id: 0,
         name: 'Kelsey Smith',
@@ -15,7 +14,7 @@ export default [
       {
         id: 1,
         name: 'Martinez Kirk',
-        connections: 13
+        connections: 0
       },
       {
         id: 2,
@@ -25,7 +24,7 @@ export default [
       {
         id: 3,
         name: 'Addie Taylor',
-        connections: 20
+        connections: 0
       },
       {
         id: 4,
@@ -35,7 +34,7 @@ export default [
       {
         id: 5,
         name: 'Hancock Chang',
-        connections: 13
+        connections: 0
       },
       {
         id: 6,
@@ -62,11 +61,10 @@ export default [
   {
     _id: '5c17790fd42ce15f8ee0ec08',
     name: 'Groupy McGroupface',
-    eventName:
-      'qui exercitation ex aliquip enim Lorem fugiat velit consectetur proident',
-    date: 'Tuesday, September 8, 2015 ',
+    eventName: 'qui exercitation ex aliquip',
+    date: 'Tues, Sept 8',
     time: '2:32 AM',
-    friends: [
+    attending: [
       {
         id: 0,
         name: 'Lara Austin',
@@ -80,7 +78,7 @@ export default [
       {
         id: 2,
         name: 'Evans Benton',
-        connections: 11
+        connections: 0
       },
       {
         id: 3,
@@ -95,7 +93,7 @@ export default [
       {
         id: 5,
         name: 'Burke Espinoza',
-        connections: 15
+        connections: 0
       },
       {
         id: 6,
@@ -110,7 +108,7 @@ export default [
       {
         id: 8,
         name: 'Rena Foreman',
-        connections: 3
+        connections: 0
       },
       {
         id: 9,
@@ -122,11 +120,10 @@ export default [
   {
     _id: '5c17790f04efd1d3021663de',
     name: 'Lets fix Toasters together',
-    eventName:
-      'voluptate exercitation enim minim eiusmod esse nulla enim exercitation dolore',
-    date: 'Thursday, February 18, 2016',
+    eventName: 'voluptate exercitation enim minim',
+    date: 'Thurs, Feb 18',
     time: '5:29 PM',
-    friends: [
+    attending: [
       {
         id: 0,
         name: 'Casey Day',
@@ -155,7 +152,7 @@ export default [
       {
         id: 5,
         name: 'Huffman Buchanan',
-        connections: 18
+        connections: 0
       },
       {
         id: 6,
@@ -182,70 +179,69 @@ export default [
   {
     _id: '5c17790fd6af203832be89c5',
     name: 'Learn R Now',
-    eventName: 'ullamco cillum ea ipsum irure amet veniam laborum ullamco quis',
-    date: 'Sunday, August 23, 2015',
+    eventName: 'ullamco cillum ea ipsum irure ullamco cillum ea ipsum irure',
+    date: 'Sun, Feb 18',
     time: '5:39 AM',
-    friends: [
+    attending: [
       {
         id: 0,
         name: 'Harper Mayo',
-        connections: 11
+        connections: 0
       },
       {
         id: 1,
         name: 'Judith Murray',
-        connections: 3
+        connections: 0
       },
       {
         id: 2,
         name: 'Ilene Cherry',
-        connections: 3
+        connections: 0
       },
       {
         id: 3,
         name: 'Francisca Lindsey',
-        connections: 3
+        connections: 0
       },
       {
         id: 4,
         name: 'Coleman Melendez',
-        connections: 3
+        connections: 0
       },
       {
         id: 5,
         name: 'Todd Santana',
-        connections: 18
+        connections: 0
       },
       {
         id: 6,
         name: 'Corine Lamb',
-        connections: 10
+        connections: 0
       },
       {
         id: 7,
         name: 'Beck Witt',
-        connections: 3
+        connections: 0
       },
       {
         id: 8,
         name: 'Diann Dunn',
-        connections: 14
+        connections: 0
       },
       {
         id: 9,
         name: 'Lakisha Abbott',
-        connections: 12
+        connections: 0
       }
     ]
   },
   {
     _id: '5c17790feba08d3adbec91c8',
     name: 'Groupy Group',
-    eventName:
-      'commodo do Lorem nulla aliquip laboris officia dolore aute ullamco',
-    date: 'Tuesday, August 11, 2015',
+    eventName: 'commodo do Lorem nulla',
+    date: 'Tues, Aug 11',
     time: '5:33 PM',
-    friends: [
+    attending: [
       {
         id: 0,
         name: 'Maryanne Ware',
@@ -254,12 +250,12 @@ export default [
       {
         id: 1,
         name: 'Katrina Rodriguez',
-        connections: 16
+        connections: 0
       },
       {
         id: 2,
         name: 'Felicia Perez',
-        connections: 19
+        connections: 0
       },
       {
         id: 3,
@@ -269,7 +265,7 @@ export default [
       {
         id: 4,
         name: 'Jami Pratt',
-        connections: 17
+        connections: 0
       },
       {
         id: 5,
@@ -284,17 +280,17 @@ export default [
       {
         id: 7,
         name: 'Weeks Shepherd',
-        connections: 14
+        connections: 0
       },
       {
         id: 8,
         name: 'Good Salinas',
-        connections: 3
+        connections: 0
       },
       {
         id: 9,
         name: 'Marisol Sloan',
-        connections: 3
+        connections: 0
       }
     ]
   }
