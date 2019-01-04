@@ -6,7 +6,14 @@ import Connections from '../Helpers/Connections/Connections';
 import EventPanelAttending from './EventPanelAttending';
 
 function EventPanel({ event }) {
-  const { attending, date, time, name, eventName } = event;
+  const {
+    attending,
+    date,
+    time,
+    name: groupName,
+    eventName,
+    description
+  } = event;
   const linkedMembers = attending.filter(member => member.connections > 0);
   return (
     <Wrapper>
@@ -16,17 +23,10 @@ function EventPanel({ event }) {
         </Connections>
         <header>
           <h1>{eventName}</h1>
-          <p>{name}</p>
+          <p>{groupName}</p>
         </header>
         <div>
-          <p>
-            Event Summary. this is the stroy fo us and whe we da'ys type. lorem
-            ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is
-            the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd
-            hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and
-            whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df
-            d{' '}
-          </p>
+          <p>{description}</p>
         </div>
       </EventPanelSummary>
       <EventPanelAttending attending={attending} />
