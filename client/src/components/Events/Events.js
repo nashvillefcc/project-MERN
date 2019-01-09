@@ -72,6 +72,7 @@ class Events extends Component {
           events={events}
           selected={selectedEventIndex}
           selectEventHandler={this.selectEventHandler}
+          fullWidth={windowWidth === 'full-size'}
         />
         {windowWidth === 'full-size' ? (
           <EventPanel event={events[selectedEventIndex] || null} />

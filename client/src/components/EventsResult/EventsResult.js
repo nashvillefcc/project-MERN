@@ -8,8 +8,9 @@ import EventsSearchBarContainer from '../EventsSearchBar/EventsSearchBarContaine
 import EventsList from '../EventsList/EventsList';
 
 function EventsResult(props) {
+  const { fullWidth } = props;
   return (
-    <Wrapper>
+    <Wrapper fullWidth={fullWidth}>
       <Heading color={colors.thirdColor}>
         Find your kindred spirts from Meetup.com
       </Heading>
@@ -20,6 +21,8 @@ function EventsResult(props) {
   );
 }
 
-EventsResult.propTypes = {};
+EventsResult.propTypes = {
+  fullWidth: PropTypes.bool
+};
 
 export default EventsResult;

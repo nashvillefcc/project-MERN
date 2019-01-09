@@ -15,5 +15,5 @@ export const colors = {
 };
 
 export const breakPoints = {
-  mid: 760
+  mid: 1200
 };

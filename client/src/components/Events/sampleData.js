@@ -5,6 +5,8 @@ export default [
     eventName: 'exercitation ipsum ea incididunt',
     date: 'Wed, Aug 9',
     time: '3:17 AM',
+    description:
+      "Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df",
     attending: [
       {
         id: 0,
@@ -64,6 +66,8 @@ export default [
     eventName: 'qui exercitation ex aliquip',
     date: 'Tues, Sept 8',
     time: '2:32 AM',
+    description:
+      "Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df",
     attending: [
       {
         id: 0,
@@ -123,6 +127,8 @@ export default [
     eventName: 'voluptate exercitation enim minim',
     date: 'Thurs, Feb 18',
     time: '5:29 PM',
+    description:
+      "Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df",
     attending: [
       {
         id: 0,
@@ -182,6 +188,8 @@ export default [
     eventName: 'ullamco cillum ea ipsum irure ullamco cillum ea ipsum irure',
     date: 'Sun, Feb 18',
     time: '5:39 AM',
+    description:
+      "Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df",
     attending: [
       {
         id: 0,
@@ -241,6 +249,8 @@ export default [
     eventName: 'commodo do Lorem nulla',
     date: 'Tues, Aug 11',
     time: '5:33 PM',
+    description:
+      "Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df d Event Summary. this is the stroy fo us and whe we da'ys type. lorem ssoi asdf dfd dj djd hsj d dfsj d jd ksj df",
     attending: [
       {
         id: 0,
