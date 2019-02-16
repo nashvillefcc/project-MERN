@@ -25,10 +25,19 @@ class Events extends Component {
 
   selectEventHandler = (e, eventIndex) => {
     e.stopPropagation();
-    this.setState(prevState => ({
-      ...prevState,
-      selectedEventIndex: eventIndex
-    }));
+    if(this.state.windowWidth === 'full-size'){
+      this.setState(prevState => ({
+        ...prevState,
+        selectedEventIndex: eventIndex
+      })
+    )}
+    else if (this.state.windowWidth !== 'full-size'){
+      this.setState(prevState => ({
+        ...prevState,
+        selectedEventIndex: eventIndex
+      }));
+      this.toggleModal();
+    }
   };
   widthBreakpointHandler() {
     //sets state.windowWidth if width of window moves over breakpoint
