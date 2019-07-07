@@ -7,6 +7,8 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+const client_app_address = 'https://localhost:3000'; // for now...
+
 app.get('/login', (req, res) => {
   res.redirect(
     `https://secure.meetup.com/oauth2/authorize?client_id=${
@@ -42,7 +44,7 @@ app.get('/login/auth_redirect', async (req, res) => {
     })
     .catch(err => console.log(err));
   // may not need the whole object for each group in the array on the client-side... possibly just names and ids of groups?
-  res.send(groupArray).redirect('/');
+  res.send(groupArray).redirect(client_app_address);
 });
 
 app.listen(process.env.PORT || 3001, () => `Server running on port ${port}`);
