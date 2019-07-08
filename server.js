@@ -26,7 +26,7 @@ app.get('/login/auth_redirect', async (req, res) => {
     },
     body: {
       client_id: process.env.CLIENT_ID,
-      grand_type: 'authorization_code',
+      grant_type: 'authorization_code',
       redirect_uri: process.env.REDIRECT_URI,
       code: auth_code,
     },
