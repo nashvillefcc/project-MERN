@@ -18,7 +18,7 @@ app.get('/login', (req, res) => {
 });
 
 app.get('/login/auth_redirect', async (req, res) => {
-  const auth_code = req.body.code;
+  const auth_code = req.query.code;
   const groupArray = await fetch('https://secure.meetup.com/oauth2/access', {
     method: 'POST',
     headers: {
