@@ -18,21 +18,18 @@ app.get('/login', (req, res) => {
 
 app.get('/login/auth_redirect', async (req, res) => {
   const auth_code = req.query.code;
-  const groupArray = await fetch(
-    `https://secure.meetup.com/oauth2/access?client_id=${
-      process.env.CLIENT_ID
-    }&client_secret=${
-      process.env.CLIENT_SECRET
-    }&grant_type=authorization_code&redirect_uri=${
-      process.env.REDIRECT_URI
-    }&code=${auth_code}`,
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-    }
-  )
+  const groupArray = await fetch(`https://secure.meetup.com/oauth2/access`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify({
+      client_id: process.env.CLIENT_ID,
+      client_secret: process.env.CLIENT_SECRET,
+      grant_type: 'authorization_code',
+      code: auth_code,
+    }),
+  })
     .then(response => response.json())
     .then(async data => {
       return await fetch('https://api.meetup.com/self/groups', {
