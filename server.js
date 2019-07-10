@@ -32,25 +32,29 @@ app.get('/login/auth_redirect', async (req, res) => {
     }
   )
     .then(response => response.json())
-    .then(async data => {
-      return await fetch('https://api.meetup.com/self/groups', {
-        method: 'GET',
-        headers: {
-          Authorization: 'Bearer ' + data.access_token,
-        },
-      })
-        .then(response => response.json())
-        .catch(err => console.log(err));
-    })
-    .catch(err => console.log(err));
-  res.send(
-    groupArray.map(m => {
-      return {
-        name: m.name,
-        id: m.id,
-      };
-    })
-  );
+    .then(
+      data => {
+        res.redirect(`http://localhost:3000?code=${data.access_token}`);
+      }
+      // TODO: do this on the client side
+      //     return await fetch('https://api.meetup.com/self/groups', {
+      //       method: 'GET',
+      //       headers: {
+      //         Authorization: 'Bearer ' + data.access_token,
+      //       },
+      //     })
+      //       .then(response => response.json())
+      //       .catch(err => console.log(err));
+      //   })
+      //   .catch(err => console.log(err));
+      // res.send(
+      //   groupArray.map(m => {
+      //     return {
+      //       name: m.name,
+      //       id: m.id,
+      //     };
+      //   })
+    );
 });
 const port = process.env.PORT || 3001;
 app.listen(port, () => console.log(`Server running on port ${port}...`));
