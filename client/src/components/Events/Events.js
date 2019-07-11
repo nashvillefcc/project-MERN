@@ -67,12 +67,13 @@ class Events extends Component {
     const url = new URL(url_string);
     const token = url.searchParams.get('code');
     if (token) {
-      const themEvents = await fetch(`/${token}`, {
+      const themGroups = await fetch(`/${token}`, {
         method: 'GET'
       })
         .then(response => response.json())
         .catch(err => console.log(err));
-      console.log(themEvents);
+      // TODO use the returned ids to actually fetch the groups
+      console.log(themGroups);
     }
   }
   componentWillUnmount() {
