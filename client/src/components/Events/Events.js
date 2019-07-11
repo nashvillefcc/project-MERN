@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
-import Wrapper from './EventsStyle';
 import { breakPoints } from '../../styles/variables';
-import EventsResult from '../EventsResult';
 import EventPanel from '../EventPanel';
+import EventsResult from '../EventsResult';
 import ModalContainer from '../Helpers/Modal';
-
+import Wrapper from './EventsStyle';
 import sampleData from './sampleData';
+
 class Events extends Component {
   state = {
     events: [],
@@ -25,13 +23,12 @@ class Events extends Component {
 
   selectEventHandler = (e, eventIndex) => {
     e.stopPropagation();
-    if(this.state.windowWidth === 'full-size'){
+    if (this.state.windowWidth === 'full-size') {
       this.setState(prevState => ({
         ...prevState,
         selectedEventIndex: eventIndex
-      })
-    )}
-    else if (this.state.windowWidth !== 'full-size'){
+      }));
+    } else if (this.state.windowWidth !== 'full-size') {
       this.setState(prevState => ({
         ...prevState,
         selectedEventIndex: eventIndex
@@ -57,7 +54,7 @@ class Events extends Component {
       }
     }
   }
-  componentDidMount() {
+  async componentDidMount() {
     //get events data
     //set width of window to state
     this.widthBreakpointHandler();
@@ -66,6 +63,17 @@ class Events extends Component {
       ...prevState,
       events: sampleData
     }));
+    const url_string = window.location;
+    const url = new URL(url_string);
+    const token = url.searchParams.get('code');
+    if (token) {
+      const themEvents = await fetch(`/${token}`, {
+        method: 'GET'
+      })
+        .then(response => response.json())
+        .catch(err => console.log(err));
+      console.log(themEvents);
+    }
   }
   componentWillUnmount() {
     window.removeEventListener(
